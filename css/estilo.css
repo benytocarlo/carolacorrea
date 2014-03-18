@@ -1,0 +1,1174 @@
+/******************************************************************************/
+/********  CSS Estilo Unificado por German Romero C.    ***********************/
+/******************************************************************************/
+
+/***************/
+/*  Reset CSS  */
+/*******************************************************************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+
+
+/********************/
+/* Css 1 Nivo Style */
+/*******************************************************************************/
+
+
+.theme-default .nivoSlider {
+	position:relative;
+	background:#fff url(../imagenes/slider/loading.gif) no-repeat 50% 50%;
+}
+.theme-default .nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+.theme-default .nivoSlider a {
+	border:0px;
+	display:block;
+}
+
+.theme-default .nivo-controlNav {
+	position:absolute;
+	left: 78%;
+	bottom: 29px;
+	margin-left: -10px;
+}
+.theme-default .nivo-controlNav a {
+	display:block;
+	width:18px;
+	height:22px;
+	background:url(../imagenes/slider/bullets.png) no-repeat;
+	text-indent:-9999px;
+	border:0px;
+	margin-right:3px;
+	float:left;
+}
+.theme-default .nivo-controlNav a.active {
+	background-position: 0px -22px;
+}
+
+.theme-default .nivo-directionNav a {
+	display:block;
+	width:30px;
+	height:30px;
+	background:url(../imagenes/slider/arrows.png) no-repeat;
+	text-indent:-9999px;
+	border:0px;
+}
+.theme-default a.nivo-nextNav {
+	background-position:-30px 0px;
+	right:15px;
+}
+.theme-default a.nivo-prevNav {
+	left:15px;
+}
+
+.theme-default .nivo-caption {
+    font-family: Helvetica, Arial, sans-serif;
+}
+.theme-default .nivo-caption a {
+    color:#fff;
+    border-bottom:1px dotted #fff;
+}
+.theme-default .nivo-caption a:hover {
+    color:#fff;
+}
+
+/*********************/
+/* Css 2 Nivo Slider */
+/*******************************************************************************/
+
+
+.nivoSlider {
+	position:relative;
+    width:100px; 
+    height:100px; 
+    background:url(../imagenes/loading.gif) no-repeat 50% 50%;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0px;
+	padding:0px;
+	margin:0px;
+	z-index:6;
+	display:none;
+}
+
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+}
+ Caption styles 
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	opacity:0.8; 
+	width:100%;
+	z-index:8;
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0px;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:0px;
+}
+.nivo-nextNav {
+	right:0px;
+}
+
+
+.nivo-controlNav a {
+	position:relative;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
+
+
+/*******************************************************************************/
+/**********************     Css Pagina Web     *********************************/
+/*******************************************************************************/
+
+#wrapper{
+	width: 960px;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+/**** Menu *********************************************************************/
+
+#mainmenu{
+	overflow:hidden;
+	position: relative;
+	width: 960px;
+	height: 184px;
+}
+#imglog{
+	position: absolute;
+	background:url(../theme/logo_carocorrea.png) no-repeat;
+	width: 178px;
+	height:163px;
+	left: 5px;
+	top: 0px;
+}
+#gohome{
+	width: 170px;
+	height: 156px;
+	margin: 0px auto;
+	cursor: pointer;
+}
+#cfrase{
+	position: absolute;
+	background:url(../theme/header1.jpg) no-repeat;
+	height: 74px;
+	width: 775px;
+	left: 184px;
+}
+#mbusca{
+	position: absolute;	
+	width: 197px;
+	top: 147px;
+	left: 757px;
+}
+#txbuscar{
+	float:left;
+	background: url(../theme/buscar.jpg);
+	width: 61px;
+	height: 23px;
+	margin-right: 2px;
+}
+#busqueda{
+	float:left;
+	margin-right: 6px;
+	width: 162px;
+}
+#busqueda input{
+	border: 1px solid #999;
+	width: 162px;
+	height: 20px;
+	border-radius: 11px;
+	outline: none;
+}
+#btnbus{
+	float:left;
+	background: url(../theme/lupa.jpg);
+	width: 25px;
+	height: 24px;
+	cursor: pointer;
+}
+
+#menucc{
+	width: 960px;
+	height: 60px;
+	padding-top: 74px;	
+}
+#menucc ul{
+	overflow: hidden;
+	height: 60px;
+	width: 960px;
+	padding: 0px;
+	margin: 0px;
+}
+#menucc li{
+	display: inline;
+	float:left;
+}
+
+#mnu01{
+	background: url(../theme/menu_left.jpg) no-repeat;
+	width: 10px;
+	height: 60px;
+	cursor: pointer;
+}
+#mnu02{
+	height: 60px;
+	width: 169px;
+}
+#mnu03{
+	background: url(../theme/home_off.jpg) no-repeat;
+	width: 94px;
+	height: 60px;
+	cursor: pointer;
+}
+#mnu03:hover{
+	background: url(../theme/home_on.jpg) no-repeat;
+}
+
+#mnu04{
+	background: url(../theme/caro_off.jpg) no-repeat;
+	width: 148px;
+	height: 60px;
+	cursor: pointer;
+}
+#mnu04:hover{
+	background: url(../theme/caro_on.jpg) no-repeat;
+}
+
+#mnu05{
+	background: url(../theme/recetas_off.jpg) no-repeat;
+	width: 109px;
+	height: 60px;
+	cursor: pointer;
+}
+#mnu05:hover{
+	background: url(../theme/recetas_on.jpg) no-repeat;
+}
+
+#mnu06{
+	background: url(../theme/datos_off.jpg) no-repeat;
+	width: 92px;
+	height: 60px;
+	cursor: pointer;
+}
+#mnu06:hover{
+	background: url(../theme/datos_on.jpg) no-repeat;
+}
+
+#mnu07{
+	background: url(../theme/videos_off.jpg) no-repeat;
+	width: 101px;
+	height: 60px;
+	cursor: pointer;
+}
+#mnu07:hover{
+	background: url(../theme/videos_on.jpg) no-repeat;
+}
+
+#mnu08{
+	background: url(../theme/talleres_off.jpg) no-repeat;
+	width: 109px;
+	height: 60px;
+	cursor: pointer;
+}
+#mnu08:hover{
+	background: url(../theme/talleres_on.jpg) no-repeat;
+}
+
+#mnu09{
+	background: url(../theme/contacto_off.jpg) no-repeat;
+	width: 118px;
+	height: 60px;
+	cursor: pointer;
+}
+#mnu09:hover{
+	background: url(../theme/contacto_on.jpg) no-repeat;
+}
+
+#mnu10{
+	background: url(../theme/menu_right.jpg) no-repeat;
+	width: 10px;
+	height: 60px;
+}
+
+.smenu01, .smenu02, .smenu03, .smenu04{
+	display: none;
+}
+/************************************************************************************/
+
+/******* Contenido Index ************************************************************/
+#sub_wrapper {
+	width: 960px;
+	margin: 0px auto;
+	overflow:hidden;
+}
+#content {
+	width: 960px;
+	margin: 0px auto;
+	overflow: hidden;
+}
+.slide {
+	float: left;
+	width: 654px;
+	height: 250px;
+	margin: 0px;
+	padding: 0px;
+}
+.theme-default #slider{
+	width: 650px;
+	height: 250px;
+}
+.theme-pascal.slider-wrapper,
+.theme-orman.slider-wrapper {
+    margin-top:150px;
+}
+
+.d_consola{
+	float: left;
+	width: 300px;
+	height: 246px; /* 250 Ajustar Imagenes */
+	overflow: hidden;
+	margin-left: 6px;
+	margin-top: 2px; /* Solo en este caso.. se podria borrar */
+}
+#contenedor_calugas_redes_sociales_index {
+	height: 341px;
+	width: 960px;
+	margin-top: 10px;
+}
+#contenedor_calugas_index {
+	float: left;
+	width: 650px;
+	height: 341px;
+}
+#calugas_index {
+	float: left;
+	height: 341px;
+	width: 210px;
+	background-image: url(../imagenes/fondo_caluga_index.gif);
+}
+.espacio_entre_calugas_index {
+	padding-right: 10px;
+	background-repeat: no-repeat;
+}
+#txt_caluga_index {
+	height: 115px;
+	width: 195px;
+}
+#contenedor_redes_sociales_index {
+	height: 341px;
+	width: 300px;
+	float: left;
+	margin-left: 10px;
+	background-image: url(../imagenes/fondo_redes_sociales.gif);
+}
+#contenedor_info_caluga_index {
+	width: 195px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#titulo_caluga_index {
+	height: 25px;
+	width: 195px;
+	padding-top: 25px;
+}
+#imagen_caluga_index {
+	height: 130px;
+	width: 195px;
+}
+#ver_mas_caluga_index {
+	float: right;
+	height: 18px;
+	width: 63px;
+}
+.txt_info_caluga {
+	font-family:Arial, Helvetica;
+	font-size: 12px;
+	color: #666;
+	padding-top: 10px;
+	text-align: left;
+	line-height:15px;
+}
+#facebook_index {
+	background-color: #FFF;
+	height: 110px;
+	width: 270px;
+	margin: 40px auto 0px auto;
+	padding: 5px;
+	border-radius: 5px; 
+}
+.twitter {
+	width: 280px;
+	margin: 8px auto 0px auto;
+}
+#twitter_index {
+	height: 147px;
+	width: 280px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 12px;
+}
+.wrapper_footer {
+	width: 960px;
+	height: 102px;
+	margin: 10px auto;
+	clear: both;
+	overflow: hidden;
+}
+.banner_footer {
+	width: 652px;
+	height: 102px;
+	float: left;
+}
+.banner_footer2 {
+	width: 300px;
+	height: 102px;
+	margin-left: 8px;
+	float: left;
+}
+/************************************************************************************************/
+
+/********* Menu Izquierdo ***********************************************************************/
+.receta-info {
+	width: 250px;
+	margin: 5px auto 30px auto;
+	float: left;
+	overflow: hidden;
+}
+.receta-info h1 {
+	font-size: 16px;
+	color: #F55011;
+	font-family: Helvetica, sans-serif;
+	font-weight: bold;
+	margin-left: 31px;
+}
+#recetasmenu {
+	font-size: 12px;
+	float: left;
+	font-weight: bold;
+	width: 249px;
+	padding-top: 13px;
+}
+#recetasmenu ul {
+	margin: 0px;
+	padding: 0px;
+	margin-left: 25px;
+	float: left;
+}
+#recetasmenu ul, li {
+	float:left;
+	list-style-type: none;
+	width: 137px;
+}
+#recetasmenu a{
+	float:left;
+	display:block;
+	border-bottom: 1px dotted;
+	padding: 7px;
+	color: #96336F;
+	font-weight: bold;
+	font-size: 12px;
+	text-decoration: none;
+	line-height: 15px;
+}
+
+#recetasmenu a.videos{
+	float:none;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	width: 200px;
+	height:45px;
+	line-height:45px;
+	padding:0;
+}
+
+.texto {
+	font-size: 25px;
+	color: #F63;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	width: 200px;
+}
+
+
+/************************************************************************************************/
+
+/******* Contenido Tipo 1 (Menu + 2 Cajas) ******************************************************/
+
+.info-izq{
+	margin-top: 4px;
+	width: 360px;
+	float: left;
+	padding-left: 15px;
+	overflow:hidden;
+}
+.info-izq h2, .info-izq h3, .info-izq h4 {
+	font-size: 23px;
+	color: #F55011;
+	font-family: Helvetica, sans-serif;
+	font-weight: normal;
+}
+.info-izq h3, .info-izq h4 {
+	margin: 30px 0px 8px 0px;
+	font-size: 18px;
+}
+.info-izq h4 {
+	color: #96336F;
+	font-size: 12px;
+	text-decoration:underline;
+	font-weight: bold;
+}
+.info-izq p{
+	font-size: 12px;
+	color: #666;
+	line-height: 20px;
+	font-family: Helvetica, sans-serif;
+}
+.p_first{
+	margin-top: 26px; /* Distancia del Top */
+}
+
+.info-der {
+	margin-top: 5px;
+	width: 335px;
+	float: left;
+	overflow:hidden;
+}
+.info-der img{
+	margin-left: 15px;
+	float: right;
+}
+#info_detalle{
+	list-style-image:url(../theme/dot.jpg);
+	list-style-position:inside;
+	overflow:hidden;
+	margin-top: 26px; /* Distancia del Top */
+}
+#info_detalle li{
+	width: 360px;
+	font-size: 12px;
+	color: #666;
+	line-height: 20px;
+	font-family: Helvetica, sans-serif;
+}
+
+#radio{
+	margin: 20px 0px 0px 0px;
+	padding: 0px;
+	font-size: 12px;
+	color: #666;
+	font-family: Helvetica, sans-serif;
+}
+
+#reproductor_rad{
+	margin-top: 20px;
+}
+
+.comentarios_facebook{
+	margin-top: 30px;
+	float:right;
+}
+
+.video-play {
+	height: 360px;
+	margin-left: 0px;
+	margin-top: 20px;
+}
+
+#carrusel{
+	width: 340px;
+	overflow:hidden;
+	position: relative;
+	padding: 10px;
+}
+
+#carrusel a.prev, #carrusel a.next {
+	display: block;
+	float: left;
+	width: 32px;
+	height: 45px;
+	text-decoration: none;
+	background: url("../theme/back.png") left 11px no-repeat;
+}
+.cajitas-videos{
+	float: left;
+}
+.cajitas-videos li{
+	display:list-item;
+	width: 65px;
+}
+.cajitas-videos li img{
+	cursor: pointer;
+}
+#carrusel a.next {
+	background: url("../theme/next.png") right 11px no-repeat;
+	padding-left: 2px;
+}
+
+.video-coaching {
+	height: 190px;
+	margin-left: 1px;
+	margin-top: 34px;
+	width: 340px;
+}
+#redcc{
+	position: relative;
+	width: 375px;
+	height: 38px;
+}
+#redgm{
+	position: absolute;
+	top: 10px;
+	left: 58px;
+}
+
+.secv{
+	overflow: hidden;
+	padding-bottom: 10px;
+}
+
+.secv img{
+	float: left;
+	cursor: pointer;
+	margin-right:8px;
+}
+.secv p{
+	width: 172px;
+	margin:  10px 0px auto 10px;
+	font-size: 12px;
+	color: #666;
+	font-family: Helvetica, sans-serif;
+	font-weight:normal;
+	float:left;	
+}
+/******* Contenido Tipo 2 (Menu + 1 Cajas) ******************************************************/
+
+.info-cen{
+	margin-top: 26px;
+	width: 695px;
+	float: left;
+	padding-left: 15px;
+	overflow:hidden;
+}
+.info-cen p{
+	font-size: 12px;
+	color: #666;
+	line-height: 20px;
+	font-family: Helvetica, sans-serif;
+}
+.info-cen h2, .info-cen h3, .info-cen h4 {
+	font-size: 23px;
+	color: #F55011;
+	font-family: Helvetica, sans-serif;
+	font-weight: normal;
+}
+.info-cen h3, .info-cen h4 {
+	margin: 45px 0px 8px 0px;
+	font-size: 18px;
+}
+.contenedor-recortes-prensa{
+	overflow:hidden;
+	margin: 35px 0px 0px 0px;
+}
+.contiene-foto-prensa {
+	float: left;
+	height: 124px;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	width: 186px;
+}
+
+/******* Contenido Tipo 3 (1 Cajas + IMG) ******************************************************/
+
+.info-cen-2{
+	margin-top: 26px;
+	width: 610px;
+	float: left;
+	overflow:hidden;
+	padding-left: 15px;
+}
+.info-cen-2 h1 {
+	font-size: 16px;
+	color: #F55011;
+	font-family: Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.txt_bajada_contacto {
+	color: #666;
+	font-family: 'Abel', sans-serif;
+	font-size: 12px;
+	width: 333px;
+	font-weight: normal;
+}
+
+#cont_formulario_contacto{
+	margin-top: 45px;
+}
+#cont_formulario_contacto td{
+	vertical-align: top;
+}
+#cont_formulario_contacto input{
+	border: 1px solid #999999;
+}
+#cont_formulario_contacto textarea{
+	border: 1px solid #999999;
+	height: 140px;
+}
+.txt_id_contacto {
+	font-family: Helvetica, sans-serif, Arial;
+	font-size: 14px;
+	color: #F60;
+	line-height: 120%;
+	vertical-align: top;
+}
+#alerta{
+	color: red;
+	font-family: 'Abel', sans-serif;
+	font-size: 12px;
+	width: 333px;
+	font-weight: normal;
+}
+/******* Contenido Tipo 3 (Recetas) *************************************************************/
+
+#info-recetas{
+	margin: 26px auto 0px 0px;
+	width: 960px;
+	overflow:hidden;
+}
+.box-recetas, .box-recetas-2{
+	float:left;
+	margin: 0px 9px 40px 9px;
+	border: 1px solid #F0F0F0;
+	border-radius: 10px;
+	width: 220px;
+	height: 220px; 
+}
+.box-recetas-2{
+	margin: 0px 9px 0px 9px; 
+}
+
+.box-recetas h2, .box-recetas-2 h2{
+	margin: 19px;
+}
+
+.box-recetas a, .box-recetas-2 a{
+	font-weight: bold;
+	color: #F60;
+	font-family: Helvetica,sans-serif;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.box-recetas a:hover, .box-recetas-2 a:hover{
+	color: #636;
+}
+
+.img-receta{
+	margin: 6px 0px 0px 8px;
+}
+
+.redes{
+	width: 200px;
+	margin: 10px auto; 
+}
+.redes a{
+	color: #432941;
+	font-family: 'Abel', sans-serif;
+	font-size: 10px;
+}
+.redes img{
+	float:left;
+}
+.r_tw, .r_fb{
+	float: left;
+	margin: 6px 8px 0px 8px;
+}
+
+/******* Buscador *******************************************************************************/
+
+.contenedor-busqueda {
+	overflow: hidden;
+	clear: both;
+}
+
+.Titulo-busqueda {
+	overflow: hidden;
+	width: 700px;
+	height: 30px;
+	color: #F55011;
+	font-weight: lighter;
+	font-size: 27px;
+	font-family: Helvetica, sans-serif;
+	margin: 19px 0px 22px 0px;
+	padding-left: 122px;
+}
+.listado1 {
+	height: 80px;
+	margin: 0 auto;
+	margin-top: 12px;
+	width: 700px;
+	border-bottom: dotted 1px #96336F;
+	padding-bottom: 12px;
+}
+.foto {
+	width: 80px;
+	height: 80px;
+	margin: 0px auto;
+	float: left;
+}
+.titulo {
+	width: 400px;
+	height: 80px;
+	margin: 0px auto;
+	padding-top: 10px;
+}
+.titulo h2{
+	width: 700px;
+	height: 25px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	padding-top: 9px;
+}
+.linkbusqueda {
+	color: #96336F;
+	font-weight: bold;
+	font-size: 14px;
+	text-decoration: none;
+}
+.indice {
+	width: 700px;
+	height: 25px;
+	margin: 0px auto;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding-top: 20px;
+}
+#tpag {
+	font-family: 'Ubuntu Condensed', sans-serif;
+	color: #96336F;
+	font-weight: bold;
+	font-size: 12px;
+	width: 55px;
+	float: left;
+}
+.tpnum {
+	font-family: 'Ubuntu Condensed', sans-serif;
+	color: #96336F;
+	font-weight: bold;
+	font-size: 12px;
+	float: left;
+	margin-right: 10px;
+	cursor: pointer;
+}
+#numeros {
+	width: 60px;
+	margin: 4px auto;
+	overflow: hidden;
+	color: #96336F;
+	font-weight: bold;
+	font-size: 12px;
+}
+#num01, #num02, #num03, #num04 {
+	float: left;
+	margin: 10px 3px 0px 3px;
+	cursor: pointer;
+}
+
+#cotizar { background:url(../imagenes/btn_cotizar.jpg) no-repeat 0 0; width:340px; height:25px; display:block; margin-top:25px;}
+#cotizar:hover { background:url(../imagenes/btn_cotizar2.jpg) no-repeat 0 0;}
+
+/******* Footer *********************************************************************************/
+.footer {
+	width: 960px;
+	height: 61px;
+	margin: 40px auto 0px auto;
+	overflow: hidden;
+}
+
+
+
+
+
+/*********************************************GALERIA DE IMAGENES***************************************************/
+#container { width:710px; float:right;}
+
+div.content {
+	/* The display of content is enabled using jQuery so that the slideshow content won't display unless javascript is enabled. */
+	display: none;
+	float: right;
+	width:420px; 
+}
+div.content a, div.navigation a {
+	font-family: 'Ubuntu Condensed', sans-serif;
+	color: #96336F;
+	font-weight: bold;
+	font-size: 12px;
+	text-decoration: none;
+	color: #C4C4C4;
+}
+div.content a:focus, div.content a:hover, div.content a:active {
+	text-decoration: underline;
+}
+div.controls {
+	margin-top: 5px;
+	height:60px;
+	width:140px;
+	float:right;
+}
+div.controls a.play {
+	font-size: 14px;
+	padding:0;
+	margin:5px 0;
+	color:#A83363;
+	text-align:center;
+	line-height:27px;
+	/*background:url(../theme/bg_btn.png) no-repeat 0 0; width:140px; height:30px; display:block;*/
+}
+div.controls a.play:hover {
+	/*background:url(../theme/bg_btn.png) no-repeat 0 -30px; width:140px; height:30px; display:block;*/
+}
+div.controls a.pause {
+	font-size: 14px;
+	padding:0;
+	margin:5px 0;
+	color:#A83363;
+	text-align:center;
+	line-height:27px;
+	/*background:url(../theme/bg_btn.png) no-repeat 0 0; width:140px; height:30px; display:block;*/
+}
+div.controls a.pause:hover {
+	/*background:url(../theme/bg_btn.png) no-repeat 0 -30px; width:140px; height:30px; display:block;*/
+}
+div.controls a {
+	padding: 5px;
+	margin:10px 0 0 0;
+}
+div.ss-controls {
+	float:right;
+}
+div.nav-controls {
+	float: right;
+}
+div.slideshow-container {
+	position: relative;
+	clear: both;
+	height: 340px; /* This should be set to be at least the height of the largest image in the slideshow */
+}
+div.loader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url('../imagenes/galeria/loader.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 550px;
+	height: 502px; /* This should be set to be at least the height of the largest image in the slideshow */
+}
+div.slideshow {
+
+}
+div.slideshow span.image-wrapper {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+div.slideshow a.advance-link {
+	display: block;
+	width: 550px;
+	height: 502px; /* This should be set to be at least the height of the largest image in the slideshow */
+	/*line-height: 502px;*/ /* This should be set to be at least the height of the largest image in the slideshow */
+	text-align: center;
+}
+div.slideshow a.advance-link:hover, div.slideshow a.advance-link:active, div.slideshow a.advance-link:visited {
+	text-decoration: none;
+}
+div.slideshow img {
+	vertical-align: middle;
+	border: 1px solid #ccc;
+}
+div.download {
+	float: right;
+}
+div.caption-container {
+	position: relative;
+	clear: left;
+	height: 75px;
+}
+span.image-caption {
+	display: block;
+	position: absolute;
+	/*width: 550px;*/
+	top: 0;
+	right: 0;
+}
+div.caption {
+	padding: 12px;
+}
+div.image-title {
+	font-family: 'Ubuntu Condensed', sans-serif;
+	color: #96336F;
+	font-weight: bold;
+	font-size: 1.4em;
+	text-align:right;
+}
+div.image-desc {
+	font-family: 'Ubuntu Condensed', sans-serif;
+	color: #96336F;
+	font-weight: bold;
+	font-size: 12px;
+	padding-top: 12px;
+}
+div.navigation {
+	/* The navigation style is set using jQuery so that the javascript specific styles won't be applied unless javascript is enabled. */
+}
+ul.thumbs {
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+ul.thumbs li {
+	float: left;
+	padding: 0;
+	margin: 5px 10px 5px 0;
+	list-style: none;
+	width:auto;
+}
+a.thumb {
+	padding: 2px;
+	display: block;
+	border: 1px solid #ccc;
+}
+ul.thumbs li.selected a.thumb {
+	background: #000;
+}
+a.thumb:focus {
+	outline: none;
+}
+ul.thumbs img {
+	border: none;
+	display: block;
+}
+div.pagination {
+	clear: both;
+}
+div.navigation div.top {
+	margin-bottom: 12px;
+	height: 11px;
+}
+div.navigation div.bottom {
+	margin-top: 12px;
+}
+div.pagination a, div.pagination span.current, div.pagination span.ellipsis {
+	display: block;
+	float: left;
+	margin-right: 2px;
+	padding: 4px 7px 2px 7px;
+	border: 1px solid #ccc;
+}
+div.pagination a:hover {
+	background-color: #eee;
+	text-decoration: none;
+}
+div.pagination span.current {
+	font-family: 'Ubuntu Condensed', sans-serif;
+	color: #96336F;
+	font-weight: bold;
+	background-color: #000;
+	border-color: #000;
+	color: #fff;
+}
+div.pagination span.ellipsis {
+	border: none;
+	padding: 5px 0 3px 2px;
+}
+/******************************************************************************************************/
